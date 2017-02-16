@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <meta charset="UTF-8">
+    <title>百思不得姐</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jwplayer-zeplios/jwplayer.js"></script>
+    <script src="js/node_modules/sea.js/sea.js"></script>
+</head>
+<body ng-app="app">
+<header>
+<div class="top">
+    <a href="#" class="logo">
+        <img src="images/logo_new.png" alt="">
+    </a>
+    <nav>
+        <a  class="current"  href="#/all/1" title="">全部</a>
+        <a  href="#/video/1" title="41">视频</a>
+        <a  href="#/pic/1" title="10">图片</a>
+        <a  href="#/text/1" title="29">段子</a>
+        <a  href="#/audio/1" title="31">声音</a>
+        <a  href="#/hot/1" title="">排行</a>
+        <a  href="#/tag/1" title="">美女</a>
+    </nav>
+    <div id="login">
+        <a href="javascript:;" id="lLogin">登录</a>
+        <span>|</span>
+        <a href="javascript:;" id="rLogin">注册</a>
+    </div>
+    <div id="login-bg"></div>
+    <div id="lLogin-a">
+        <div class="regist">
+        <div class="login-hd">
+            <div class="l-title">登录</div>
+            <span class="close" id="l-close"></span>
+        </div>
+        <div class="dialog">
+            <div class="dialog-l">
+                <form action="">
+                    <div class="l-zh">
+                        <span class="l-zh-tit">帐&nbsp;&nbsp;&nbsp;&nbsp;号 |  </span>
+                        <input type="text" placeholder="手机号">
+                    </div>
+                    <div class="l-pw">
+                        <span class="l-pw-tit">密&nbsp;&nbsp;&nbsp;&nbsp;码 |  </span>
+                        <input type="password" placeholder="请输入密码">
+                    </div>
+                    <div class="agree">
+                        <input type="checkbox" name="jie"/>  姐，记住我
+                        <a href="" class="forget-pw">忘记密码</a>
+                    </div>
+                    <a href="" class="d-login">登录</a>
+                </form>
+            </div>
+            <div class="dialog-r">
+                <div class="joint-login">
+                    <span class="joint-icon">合作账号登录</span>
+                    <ul>
+                        <li><a href="#">
+                            <span class="weibo"></span>
+                            <span class="joint-tit">新浪微博</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="qq"></span>
+                            <span class="joint-tit">QQ</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="joint-r">
+                    <span class="joint-regist">还没有帐号？</span>
+                    <span class="joint-roll">注册</span>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="content">
+    <div class="c_bd">
+        <div class="c_left">
+            <div class="c_left-l">
+                <div class="c-nav">
+                    <ul>
+                        <li class="nav_active">
+                            <a href="/">精华</a>
+                        </li>
+                        <li>
+                            <a href="/">最新</a>
+                        </li>
+                        <li>
+                            <a href="/">穿越</a>
+                        </li>
+                    </ul>
+                </div>
+                    <ul class="ul"></ul>
+
+          </div>
+            <div class="page">
+                <div class="page_sr">
+                    <ul class="pages"></ul>
+                </div>
+            </div>
+        </div>
+          <div class="c-right">
+              <div class="c-right-r">
+                  <div class="before-day">
+
+                      <a href="/" >
+                          <div class="icon">
+                              精华推荐
+                          </div>
+                          <div class="main">
+                              大哥别杀我！！——吓得我手机都摔碎了
+                          </div>
+                          <div class="img">
+                              <img src="http://mpic.spriteapp.cn/crop/64x59/picture/2015/0703/5595f7e1d60ef_wpd.jpg" title="大哥别杀我！！—..." alt="大哥别杀我！！—...">
+                          </div>
+                      </a>
+
+                  </div>
+                  <div class="j-sent">
+                      <a href="/"class="left icon-contribute">
+                          <i class="icon-page-contribute"></i>发帖
+                      </a>
+                  </div>
+                  <div class="x-right_qr_code">
+                      <div class="x-right_qr_code_c">
+                          <i class="icon-r-qr">
+                              <img src="http://wimg.spriteapp.cn/huodong/qr.png" alt="百思不得姐二维码" title="扫二维码 用手机看百思不得姐">
+                          </i>
+
+                          <p class="icon-r-qr-des">扫二维码 用手机看百思不得姐</p>
+                      </div>
+                  </div>
+                  <div class="j-hot-target">
+                      <div class="title">
+                          <h3>百思不得姐热门标签</h3><a rel="nofollow" href="/tag/" class="more">更多</a></div>
+                      <div class="main">
+
+                          <a href="/" class="link">搞笑</a>
+
+                          <a href="/" class="link">吐槽</a>
+
+                          <a href="/" class="link">糗事</a>
+
+                          <a href="/" class="link">微视频</a>
+
+                          <a href="/" class="link">恶搞</a>
+
+                          <a href="/" class="link">笑话</a>
+
+                          <a href="/" class="link">创意</a>
+
+                          <a href="/" class="link">心情</a>
+
+                          <a href="/" class="link">链接</a>
+
+                          <a href="/" class="link">情感</a>
+
+                          <a href="/" class="link">hx</a>
+
+                          <a href="/" class="link">原创</a>
+
+                          <a href="/" class="link">自拍</a>
+
+                          <a href="/" class="link">美女</a>
+
+                          <a href="/" class="link">动态图</a>
+
+                          <a href="/" class="link">萌</a>
+
+                          <a href="/" class="link">涨姿势</a>
+
+                          <a href="/" class="link">影视</a>
+
+                          <a href="/" class="link">极品</a>
+
+                          <a href="/" class="link">牛人</a>
+
+                          <a href="/" class="link">跳舞</a>
+
+                          <a href="/" class="link">奇葩</a>
+
+                          <a href="/" class="link">唱歌</a>
+
+                          <a href="/" class="link">风景</a>
+
+                          <a href="/" class="link">GIF图</a>
+
+                          <a href="/" class="link">电台</a>
+
+                          <a href="/" class="link">萌宠</a>
+
+                          <a href="/" class="link">百思红人</a>
+
+                          <a href="/" class="link">社会新闻</a>
+
+                          <a href="/" class="link">音乐</a>
+
+                      </div>
+
+                  </div>
+                  <div class="j-r-wrst j-all-like j-r-list j-jq-hot" id="wrst">
+                      <div class="n-title">
+                          <h2 class="u-tt u-tt-md">百思不得姐近期热门</h2>
+                      </div>
+                      <div class="j-list">
+                          <div class="j-list-c">
+
+                              <div class="j-item">
+                                  <a href="/">
+                                      <div class="j-item-img">
+                                          <img src="http://mpic.spriteapp.cn/crop/152x93/picture/2015/0719/55ab741872c51_wpd.jpg" class="lazy" style="display: inline;">
+
+                                          <div class="j-item-play">
+                                              <i class="icon-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <div class="j-item-des">
+                                      <a href="/">国内最牛女司机，坐副驾驶的男人得吓出心脏病！</a>
+                                  </div>
+                              </div>
+
+                              <div class="j-item">
+                                  <a href="/">
+                                      <div class="j-item-img">
+                                          <img src="http://mpic.spriteapp.cn/crop/152x93/picture/2015/0721/55ae08e390a2f_wpd.jpg" class="lazy" style="display: inline;">
+
+                                          <div class="j-item-play">
+                                              <i class="icon-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <div class="j-item-des">
+                                      <a href="/">他年仅6岁就月薪8000元，养家糊口，震惊世界！！</a>
+                                  </div>
+                              </div>
+
+                              <div class="j-item">
+                                  <a href="/" >
+                                      <div class="j-item-img">
+                                          <img src="http://mpic.spriteapp.cn/crop/152x93/picture/2015/0717/55a87a6fc399b_wpd.jpg" class="lazy"  style="display: inline;">
+
+                                          <div class="j-item-play">
+                                              <i class="icon-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <div class="j-item-des">
+                                      <a href="/">歌声好听节奏强！！只听歌声我都想娶她了！！看了视频之后我觉得还是许配给一楼兄弟好~</a>
+                                  </div>
+                              </div>
+
+                              <div class="j-item">
+                                  <a href="/" >
+                                      <div class="j-item-img">
+                                          <img src="http://mpic.spriteapp.cn/crop/152x93/picture/2015/0808/55c582305da8c_wpd.jpg" class="lazy" style="display: inline;">
+
+                                          <div class="j-item-play">
+                                              <i class="icon-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <div class="j-item-des">
+                                      <a href="/">妹子一开唱，震惊啦！好可爱的说~</a>
+                                  </div>
+                              </div>
+
+                              <div class="j-item">
+                                  <a href="/" >
+                                      <div class="j-item-img">
+                                          <img src="http://mpic.spriteapp.cn/crop/152x93/picture/2015/0731/55bb42abdb1bd_wpd.jpg" class="lazy" style="display: inline;">
+
+                                          <div class="j-item-play">
+                                              <i class="icon-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <div class="j-item-des">
+                                      <a href="/">这司机真牛逼</a>
+                                  </div>
+                              </div>
+
+                              <div class="j-item">
+                                  <a href="/" >
+                                      <div class="j-item-img">
+                                          <img src="http://mpic.spriteapp.cn/crop/152x93/picture/2015/1021/56272beaaaf60_wpd.jpg" class="lazy" style="display: inline;">
+
+                                          <div class="j-item-play">
+                                              <i class="icon-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <div class="j-item-des">
+                                      <a href="/">请把你的女儿嫁给我呀！这是谁给配的音，太牛逼了！</a>
+                                  </div>
+                              </div>
+
+                              <div class="j-item">
+                                  <a href="/">
+                                      <div class="j-item-img">
+                                          <img src="http://mpic.spriteapp.cn/crop/152x93/picture/2015/0818/55d28f78d4233_wpd.jpg" class="lazy" style="display: inline;">
+
+                                          <div class="j-item-play">
+                                              <i class="icon-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <div class="j-item-des">
+                                      <a href="/">两男广场跳恰恰，画面太美！周围大妈：这广场舞我不跳了！</a>
+                                  </div>
+                              </div>
+
+                              <div class="j-item">
+                                  <a href="/" >
+                                      <div class="j-item-img">
+                                          <img src="http://mpic.spriteapp.cn/crop/152x93/picture/2015/0721/55adc216e5c1e_wpd.jpg" class="lazy" style="display: inline;">
+
+                                          <div class="j-item-play">
+                                              <i class="icon-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                                  <div class="j-item-des">
+                                      <a href="/">40秒，笑了我一下午~~这是装了开关吗？</a>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<footer><div class="j-footer">
+    <!--联系-->
+    <div class="j-contect">
+        <div class="box" style="width:140px;">
+            <h3>关于百思不得姐</h3>
+
+            <div class="main">
+                <ul>
+                    <li>
+                        <a rel="nofollow" href="http://www.spriteapp.com/about.html" target="_blank">关于百思不得姐</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="http://www.spriteapp.com/Cooperation.html" target="_blank">媒体合作</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="http://www.budejie.com" target="_blank">不得姐</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box" style="width:170px;">
+            <h3>关注百思不得姐</h3>
+
+            <div class="main">
+                <ul>
+                    <li>
+                        <a rel="nofollow" href="http://weibo.com/bsbudejie" target="_blank">百思不得姐新浪微博</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="javascript:void(0)" class="j-qq">百思不得姐QQ公众号</a>
+
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="http://tieba.baidu.com/f?kw=%E7%99%BE%E6%80%9D%E4%B8%8D%E5%BE%97%E5%A7%90&amp;ie=utf-8&amp;fr=wwwt" target="_blank">不得姐贴吧</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="http://user.qzone.qq.com/2202411449" target="_blank">百思不得姐QQ空间</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="javascript:void(0)" class="j-weixin">百思不得姐微信公众号</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box last">
+            <h3>友情链接</h3>
+
+            <div class="main">
+                <ul>
+                    <li>
+                        <a href="http://www.99danji.com/zt/" target="_blank">单机游戏大全</a>
+                    </li>
+                    <li>
+                        <a href="http://www.9553.com/article/" target="_blank">游戏攻略大全</a>
+                    </li>
+                    <li>
+                        <a href="http://tupian.baike.com/" target="_blank">图片百科</a>
+                    </li>
+                    <li>
+                        <a href="http://www.ratoo.net/" target="_blank">热图网</a>
+                    </li>
+                    <li>
+                        <a href="http://www.7791.com.cn/" target="_blank">叫兽网</a>
+                    </li>
+                    <li>
+                        <a href="http://www.kaolafm.com/ " target="_blank">考拉FM</a>
+                    </li>
+                    <li>
+                        <a href="http://jailbreak.25pp.com/" target="_blank">苹果越狱</a>
+                    </li>
+                    <li>
+                        <a href="http://aladd.net/" target="_blank">唯美图片</a>
+                    </li>
+
+                    <li>
+                        <a href=" http://www.hdpfans.com/" target="_blank">高清范</a>
+                    </li>
+                    <li>
+                        <a href="http://www.onlylady.com/" target="_blank">女人志</a>
+                    </li>
+                    <li>
+                        <a href="http://bbs.letv.com/" target="_blank">乐迷社区</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="erwiema">
+            <i class="icon-footer-qr">
+                <img src="http://wimg.spriteapp.cn/huodong/footer_wx_qrs.jpeg" alt="百思不得姐微信公众号" title="百思不得姐微信公众号">
+                <span style="display:block;font-size: 13px; margin-top:4px;">百思不得姐微信</span>
+            </i>
+        </div>
+        <div class="box">
+            <h3>百思不得姐粉丝交流群</h3>
+
+            <div class="main">
+                <ul>
+                    <li>
+                        <a rel="nofollow" href="#">不得姐粉丝群1:133084754</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="#">不得姐粉丝群2:251857413</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="#">不得姐粉丝群3:183719937</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="#">不得姐粉丝群4:240743608</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="#">不得姐粉丝群5:188747768</a>
+                    </li>
+                    <li>
+                        <a rel="nofollow" href="#">不得姐粉丝群6:66481443</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--公司-->
+    <div class="j-footer-c">
+        精灵在线网络技术（北京）有限公司©2011|京公网安备11010802013498号|京ICP备11038795号
+    </div>
+</div></footer>
+<div class="scroll-top scrollhide">
+    <div class="scroll-top-qr">
+        <div class="scroll-top-qr-t">
+            <div class="scroll-top-qr-c"></div>
+            <div class="scroll-top-qr-txt">手机扫码看不得姐</div>
+        </div>
+        <div class="scroll-top-qr-b"></div>
+    </div>
+    <div class="scroll-top-arrow f-tac">
+        <a href="javascript:;"><i class="icon-scroll-top-arrow"></i></a>
+    </div>
+</div>
+  </body>
+  </html>
+<script src="js/index.js"></script>
+
+
+
+
+
