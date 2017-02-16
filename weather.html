@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+
+            var xhr = null;
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject("microsoft.XMLHTTP");
+            }
+            xhr.open("get", "./weather.json", true);
+            xhr.send();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                  var weather=JSON.parse(xhr.responseText).weather;
+
+                    for(var i=0;i<weather.length;i++){
+                        var list=document.getElementById("list");
+                        var li=document.createElement("li");
+                        console.log(weather[i]);
+                        var wea=weather[i].date;
+                        wea+=weather[i].info.day[0];
+                        wea+=weather[i].info.day[1];
+                        wea+=weather[i].info.day[2];
+                        wea+=weather[i].info.day[3];
+
+                        li.innerHTML=wea;
+                        list.appendChild(li);
+                    }
+
+                }
+            }
+          /*  function getNodeText(els) {
+                if (typeof els.textContent != "undefine") {
+                    return els.textContent;
+                } else if (typeof els.text != "undefine") {
+                    return els.text;
+                }
+            }*/
+        }
+    </script>
+
+</head>
+<body>
+  <div id="box">
+      <ul id="list"></ul>
+  </div>
+</body>
+</html>
